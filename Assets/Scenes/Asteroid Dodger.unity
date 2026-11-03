@@ -967,6 +967,10 @@ MonoBehaviour:
   oscReceiver: {fileID: 2138954678}
   oscTransmitter: {fileID: 2138954677}
   asteroidDodger: {fileID: 617091141}
+  PhotoInMin: 10
+  PhotoInMax: 200
+  PhotoOutMin: 0
+  PhotoOutMax: 100
 --- !u!114 &2138954677
 MonoBehaviour:
   m_ObjectHideFlags: 0

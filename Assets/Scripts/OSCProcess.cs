@@ -39,7 +39,7 @@ public class OSCProcess : MonoBehaviour
 
         // Ajustement de la valeur
         float ajustee = (
-            ((float)valeur - PhotoInMin) / (PhotoInMax - PhotoInMin) * (PhotoOutMax - PhototOutMin) + PhotoOutMin
+            ((float)valeur - PhotoInMin) / (PhotoInMax - PhotoInMin) * (PhotoOutMax - PhotoOutMin) + PhotoOutMin
         );
         
         // DESTINATION
