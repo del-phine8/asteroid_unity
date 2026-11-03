@@ -969,8 +969,8 @@ MonoBehaviour:
   asteroidDodger: {fileID: 617091141}
   PhotoInMin: 10
   PhotoInMax: 200
-  PhotoOutMin: 0
-  PhotoOutMax: 100
+  PhotoOutMin: -6
+  PhotoOutMax: 2
 --- !u!114 &2138954677
 MonoBehaviour:
   m_ObjectHideFlags: 0

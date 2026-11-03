@@ -24,7 +24,16 @@ public class OSCProcess : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if ( asteroidDodger.GetShipIsVisible() ) {
+            var oscMessage = new OSCMessage("/lumiere"); 
+            oscMessage.AddValue( OSCValue.Int(1) ); // Ajoute l’entier 1
+            oscTransmitter.Send( oscMessage ); // Envoyer le message 
+        } else {
+            var oscMessage = new OSCMessage("/lumiere"); 
+            oscMessage.AddValue( OSCValue.Int(0) ); // Ajoute l’entier 0
+            oscTransmitter.Send( oscMessage ); // Envoyer le message 
+        }
+
     }
 
     void TraiterMessagePhoto(OSCMessage message)
